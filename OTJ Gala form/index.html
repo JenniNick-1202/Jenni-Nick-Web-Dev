@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Ossett Town Juniors Gala Entry Form</title>
+</head>
+<body>
+    <img src="OTJ.logo.png"
+        alt="Ossett Town Juniors"
+        />
+    <h1> OTJ Gala Registration Form</h1>
+    <p class="entry">Please fill out this form with the required details to enter your team;</p>
+
+    <form
+        method="post" 
+        action="mailto:Jenni.nick@gmail.com" 
+        onsubmit="location.href='Thank you.html';" >
+
+    <fieldset>
+        <label for="your-name">Enter your Name;<input id="your-name" type="text" required/></label>
+    </fieldset>
+    <fieldset>
+        <label for="email">Enter your email address;<input id="email" type="email" required/> </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Is your team a boys team or a girls team?</legend>
+        
+        <label for="Boys"><input id="Boys" type="radio" name="team-gender" class="inline" checked /> Boys</label>
+        <label for="Girls"><input id="Girls" type="radio" name="team-gender" class="inline" /> Girls</label>
+
+    </fieldset>
+
+    <fieldset>
+        <label for="team-name">Enter your Team Name;<input id="team-name" type="text" required/></label>
+    </fieldset>
+
+    <fieldset>
+        <label for="age-group">Enter your age group;<input id="age-group" type="number" min="6" max="14" required/></label>
+        <p> Boys team, U6 to U13 and Girls teams, U6 to U14.</p>
+    </fieldset>
+
+    <fieldset>
+        <label for="tier">What tier is your team?
+        <Select id="tier" name="tier"> Enter the tier of your team?
+            <option value="">Please select</option>
+            <option value="1"> Tier A</option>
+            <option value="2">Tier B</option>
+            <option value="3">Tier C</option>
+        </Select>
+        <p>Please note we will try our best to enter teams in the requested tier however cannot always guarantee it.</p>
+        </label>
+    </fieldset>
+    
+    <fieldset>
+        <label for="terms-and-conditions">
+            <input class="inline"
+                    id="terms-and-conditions" 
+                    type="checkbox" 
+                    required name="terms-and-conditions" /> 
+                    I have read and accept the terms and conditions.
+    </fieldset>
+
+    <input type="submit" value="Submit" />
+    </form>
+
+    <h2>Terms and Conditions</h2>
+
+    <ul>
+        <li>Entry is confirmed only once payment has been received and confirmation sent.</li>
+        <li>Grassroots teams only. No academies please.</li>
+        <li>Matches are 8 minutes each during knock out and 10 minutes for semi finals and finals.</li>
+        <li>What the referee decides, goes. We will not tolerate any abusive behaviour. You will be asked to leave.</li>
+        <li>Age groups are based on this season (23/24) </li>
+    </ul>
+</body>
+</html>
